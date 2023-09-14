@@ -31,9 +31,6 @@ The direct way to solve this problem is by starting off with a chosen element an
 with other integers in the array. If the target sum has not been found, then you move on and choose the next fixed element, and
 then see all the sums that form with the remaining integers with the new chosen integer. This method would require two for-loops,
 and that means the time-complexity would be O(n^2) or quadratic.
-
-
-Test Change
 '''
 
 class Solution:
@@ -43,4 +40,3 @@ class Solution:
                 if(nums[i] + nums[j] == target):
                     return [i,j]
                 
-
